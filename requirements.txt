@@ -1,0 +1,45 @@
+# Core API
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# Task Queue
+celery==5.4.0
+redis==5.2.0
+flower==2.0.1
+
+# Auth & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.1
+
+# ML / Inference
+torch>=2.1.2
+diffusers>=0.32.0
+transformers>=4.46.0
+accelerate>=1.2.1
+sentencepiece>=0.2.0
+safetensors>=0.4.5
+Pillow>=10.0.0
+imageio[ffmpeg]>=2.36.0
+opencv-python-headless>=4.10.0
+numpy>=1.26.0
+huggingface-hub>=0.26.2
+
+# Storage & File handling
+aiofiles==24.1.0
+boto3==1.35.76          # optional: S3 upload support
+
+# Monitoring & Observability
+prometheus-fastapi-instrumentator==7.0.0
+structlog==24.4.0
+
+# Rate limiting
+slowapi==0.1.9
+
+# DB (job metadata persistence)
+sqlalchemy==2.0.36
+alembic==1.14.0
+aiosqlite==0.20.0
